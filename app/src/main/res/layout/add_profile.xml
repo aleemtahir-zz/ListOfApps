@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@color/green">
+
+        <EditText android:id="@+id/etProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="@string/hint_profile_name"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/etStartTime"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/hint_end_time" />
+
+        <EditText android:id="@+id/etEndTime"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="@string/hint_start_time"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lvAddProfile"
+        android:layout_weight="0.97" />
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/btn_txt_create_profile"
+        android:textColor="@color/green"
+        android:background="@color/white"
+        android:onClick="onClickAdd"/>
+
+</LinearLayout>

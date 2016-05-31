@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context="com.example.listofapps.HomeActivity"
+    >
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="100dp"
+        android:id="@+id/absoluteLayout"
+        android:layout_above="@+id/absoluteLayout2"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="244dp"
+            android:id="@+id/text1"
+            android:maxLines="2"
+            android:lines="2"
+            android:text="@string/text1"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            android:textAlignment="center"
+            android:background="@drawable/customborder" />
+
+    </AbsoluteLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:padding="120dp"
+        android:layout_above="@+id/exit"
+        android:id="@+id/absoluteLayout2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:text="@string/MobileSuggest"
+            android:background="@drawable/customborder1"
+            android:id="@+id/btnMobileSuggest" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+            android:textSize="40sp"
+        android:textColor="@color/white"
+        android:background="@drawable/customborder1"
+        android:layout_y="125dp"
+        android:text="@string/CurrentWork"
+        android:id="@+id/btnCurrentWork"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:background="@drawable/customborder1"
+            android:layout_y="250dp"
+            android:text="@string/ManuallySelect"
+            android:id="@+id/btnManuallySelect"/>
+
+    </AbsoluteLayout>
+    
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/exit"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:text="@string/Exit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
